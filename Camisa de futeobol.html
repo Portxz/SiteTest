@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Jogadores</title>
+</head>
+<body>
+
+    <img id="logo" src="Logo.jpg" alt="Logo do Site">
+
+    <h1>SORTEADOR DE JOGADORES DE FUTEBOL</h1>
+
+    <img id="playerImage" src="imagem_padrao.jpg" alt="Imagem do jogador">
+    <h2 id="playerName">Nome do Jogador</h2>
+    <h3 id="clubName">Clube do Jogador</h3>
+
+    <button onclick="sortearJogador()">Sortear Jogador</button>
+
+    
+    <script>
+        const jogadores = [
+            { nome: "Jogador 1", clube: "Clube A", imagem: "imagem_jogador1.jpg" },
+            { nome: "Jogador 2", clube: "Clube B", imagem: "imagem_jogador2.jpg" },
+            // Adicione mais jogadores conforme necessário
+        ];
+
+        function sortearJogador() {
+            const jogadorSorteado = jogadores[Math.floor(Math.random() * jogadores.length)];
+            document.getElementById('playerImage').src = jogadorSorteado.imagem;
+            document.getElementById('playerName').innerText = jogadorSorteado.nome;
+            document.getElementById('clubName').innerText = jogadorSorteado.clube;
+        }
+    </script>
+
+</body>
+</html>

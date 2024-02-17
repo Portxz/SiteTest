@@ -1,0 +1,36 @@
+body {
+    font-family: century-gothic;
+    text-align: center;
+    margin: 40px;
+    background-color: cadetblue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+h2, h3 {
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#logo {
+    max-width: 10px;  /* Ajuste este valor conforme necessário */
+    max-height: 10px;  /* Ajuste este valor conforme necessário */
+    margin: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10%
+}
+
+
